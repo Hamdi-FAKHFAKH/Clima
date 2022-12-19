@@ -39,7 +39,7 @@ class WeatherModel {
       return '🤷‍';
     }
   }
-
+  // récupérer le message selon la valeur de température
   static String getMessage(int temp) {
     if (temp > 25) {
       return 'It\'s 🍦 time';
