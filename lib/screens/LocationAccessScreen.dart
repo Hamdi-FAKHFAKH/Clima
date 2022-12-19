@@ -2,6 +2,7 @@ import 'package:clima/screens/location_screen.dart';
 import 'package:clima/services/weather.dart';
 import 'package:flutter/material.dart';
 
+/*----------------------------------------- Page afficher lorsque l'acces au position est refuser --------------------------------  */
 class LocationAccessScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {

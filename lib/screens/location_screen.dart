@@ -4,6 +4,8 @@ import 'package:clima/services/weather.dart';
 import 'package:clima/utilities/constants.dart';
 import 'package:flutter/material.dart';
 
+/*---------------------------------------------------------------- Page d'acceuil -----------------------------------------*/
+
 class LocationScreen extends StatefulWidget {
   LocationScreen({this.data});
   final data;
@@ -17,12 +19,14 @@ class _LocationScreenState extends State<LocationScreen> {
   String name = '';
   @override
   void initState() {
+    /** pour passer des données de classe parent au son state en utilise << widget >> **/
     updateUI(widget.data);
-    print(id);
   }
 
   void updateUI(dynamic data) {
+    // lorsque il n'a pas de données on fait une redirection vers la page de erreur
     if (data == null) {
+      // autre Méthode pour faire la redirection auto vers autre Screen
       WidgetsBinding.instance.addPostFrameCallback((_) {
         // pour résoulue l'erreur setState() or markNeedsBuild() called during build
         Navigator.push(context, MaterialPageRoute(builder: (context) {
