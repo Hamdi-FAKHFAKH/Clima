@@ -32,7 +32,7 @@ class _LoadingScreenState extends State<LoadingScreen> {
     return Scaffold(
       body: Center(
         child: SpinKitFadingFour(
-          //----------------------snipet
+          //----------------------spinner -------------------//
           color: Colors.white,
           size: 100,
         ),
