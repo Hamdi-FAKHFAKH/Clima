@@ -19,7 +19,7 @@ class WeatherModel {
     return net.getdata();
   }
 
-//condition : est un valeur retourner par API weather Permet de données le type de weather ( cloud , Rain , snow , clair,....)
+//condition : est un valeur retourner par API weather Permet de données le types de météo ( cloud , Rain , snow , clair,....)
   static String getWeatherIcon(int condition) {
     if (condition < 300) {
       return '🌩';
