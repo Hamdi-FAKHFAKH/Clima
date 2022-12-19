@@ -23,7 +23,7 @@ class _LoadingScreenState extends State<LoadingScreen> {
   }
 
   void initState() {
-    // méthode appler lors de la création de la widget LoadingScreen
+    // méthode appeler lors de la création de la widget LoadingScreen
     getposition();
   }
 
